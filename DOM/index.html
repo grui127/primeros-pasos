@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Ejercicios DOM</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+	<script src="https://kit.fontawesome.com/7432900693.js" crossorigin="anonymous"></script>
+	<script src="localsto.js"></script>
+</head>
+<body class="body">
+	<header class="header">
+		<h1 id="titulo">Ejercicios DOM</h1>
+	</header>
+
+	<button class="btnMenu"><i class="fa-solid fa-bars"></i></button>
+	<button class="btnArriba">
+		<a href="#titulo">
+		<i class="fa-solid fa-arrow-up"></i>
+		</a>
+	</button>
+	<button class="modOsc">
+		<i class="fa-solid fa-sun"></i>
+	</button>
+
+	<nav class="nav">
+		<a href="#seccion1">Reloj y Alarma</a>
+		<a href="#seccion2">Mueve La Pelota</a>
+		<a href="#seccion3">Cuenta Atras</a>
+		<a href="#seccion4">Responsie con js</a>
+		<a href="#seccion5">Tester de URL</a>
+		<a href="#seccion6">Deteccion de camara</a>
+		<a href="#seccion7">Geolocalizacion</a>
+		<a href="#seccion8">Barra Busqueda</a>
+		<a href="#seccion9">Sorteo</a>
+		<a href="#seccion10">Carrusel Fotos</a>
+		<a href="#seccion11">Video Inteligente</a>
+		<a href="#seccion12">Formulario valido</a>
+		<a href="#seccion13">Narrador</a>
+	</nav>
+
+	<article>
+		<section class="secciones">
+			<h2 id="seccion1">Seccion 1</h2>
+			<h2 class="tituloReloj">Reloj y Alarma Sonora</h2>
+				<span class="hora"></span>
+			<button class="prenderReloj">Prender Reloj</button>
+			<button class="apagarReloj">Apagar Reloj</button>
+				<audio controls class="audio">
+					 <source src="alarma.mp3" type="audio/mpeg">	
+				</audio>
+			<button class="prenderAlarma">Prender Alarma</button>
+			<button class="apagarAlarma">Apagar alarma</button>
+		</section>
+		<section class="secciones">
+			<h2 id="seccion2">Seccion 2</h2>
+			<h2 class="tituloTeclas">Mueve la pelota</h2>
+			<div class="cancha">
+				<div class="pelota"></div>
+			</div>
+		</section>
+		<section class="secciones">
+			<h2 id="seccion3">Seccion 3</h2>
+			<h2>Ya Falta Menos!!</h2>
+			<h3 class="contador"></h3>
+			<div class="mensaje"></div>
+		</section>
+		<section class="secciones">
+			<h2 id="seccion4">Seccion 4</h2>
+			<h2>Responsive con js</h2>
+			<div class="responsive-video"></div>
+		</section>
+		<section class="secciones">
+			<h2 id="seccion6">Seccion 5</h2>
+			<h2>Tester de URL</h2>
+			<form class="formulario" id="form1">
+				<input type="url" placeholder="Probar URL" class="probarURL">
+				<input type="number" placeholder="Ancho" class="anchura">
+				<input type="number" placeholder="Alto" class="altura">
+				<input type="submit" value="Probar" id="openWindow">	
+			</form>
+			<button id="closeWindow">Cerrar</button>
+		</section>
+		<section class="secciones">	
+			<h2 id="seccion6">Seccion 6</h2>
+			<h2>Deteccion de camara</h2>
+			<div class="camara">
+				<video id="video" playsinline autoplay></video>
+			</div>
+		</section>
+		<section class="secciones">	
+			<h2 id="seccion7">Seccion 7</h2>
+			<h2>Geolocalizacion</h2>
+			<div class="geografia"></div>
+			<div class="maps"></div>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback"></script>
+		</section>
+		<section class="secciones">	
+			<h2 id="seccion8">Seccion 8</h2>
+			<h2>Barra de Busqueda</h2>
+			<input type="search" name="buscador" id="buscador">
+				<div class="fotos">
+					<div class="foto">
+						<img src="https://placeimg.com/640/480/any" alt="any">
+						<div class="pie"><p>any</p></div>
+					</div>
+					<div class="foto">
+						<img src="https://placeimg.com/640/480/animals" alt="animals">
+						<div class="pie"><p>animals</p></div>
+					</div>
+					<div class="foto">
+						<img src="https://placeimg.com/640/480/architecture" alt="architecture">
+						<div class="pie"><p>architecture</p></div>
+					</div>
+					<div class="foto">
+						<img src="https://placeimg.com/640/480/nature" alt="nature">
+						<div class="pie"><p>nature</p></div>
+					</div>
+					<div class="foto">
+						<img src="https://placeimg.com/640/480/people" alt="people">
+						<div class="pie"><p>people</p></div>
+					</div>
+					<div class="foto">
+						<img src="https://placeimg.com/640/480/tech" alt="tech">
+						<div class="pie"><p>tech</p></div>
+					</div>
+				</div>
+		</section>
+		<section class="secciones">	
+			<h2 id="seccion9">Seccion 9</h2>
+			<h2>Sorteo Digital</h2>
+			<ul class="sorteo">
+				<li>JavaScript</li>
+				<li>PHP</li>
+				<li>JAVA</li>
+				<li>Python</li>
+				<li>C</li>
+				<li>Ruby</li>
+				<li>Go</li>
+				<li>Visual Basic</li>
+				<li>Rust</li>
+				<li>Perl</li>
+			</ul>
+			<button class="sortear">Obtener Ganador</button>
+		</section>
+		<section class="secciones">	
+			<h2 id="seccion10">Seccion 10</h2>
+			<h2>Carrusel de Fotos</h2>
+			<div class="carrusel">
+				<button class="btn-left"><i class="fa-solid fa-circle-arrow-left"></i></button>
+    			<img src="foto1.png" alt="imagen" id="car">
+    			<button class="btn-right"><i class="fa-solid fa-circle-arrow-right"></i></button>
+				<figcaption>UWU</figcaption>
+			</div>
+		</section>
+		<section class="secciones">	
+			<h2 id="seccion11">Seccion 11</h2>
+			<h2>Video Inteligente</h2>
+				<video src="Venta.mp4" autoplay controls loop id="muteado"></video>
+		</section>
+		<section class="secciones">	
+			<h2 id="seccion12">Seccion 12</h2>
+			<h2>Formulario Valido</h2>
+			<div class="divform">
+				<form id="form">
+					<input type="text" name="nombre" placeholder="Nombre Completo" required>
+				
+					<input type="email" name="email" placeholder="Correo Electronico" required>
+				
+					<input type="text" name="asunto" placeholder="Asunto" required>
+			
+					<textarea placeholder="Contenido..." required class="textarea"></textarea>
+					<!-- <div class="mal">Campo Invalido</div> -->
+					<button>Enviar</button>
+				</form>
+			</div>
+		</section>
+		<section class="secciones">	
+			<h2 id="seccion13">Seccion 13</h2>
+			<h2>Narrador</h2>
+			<form id="narrador">
+				<select class="selector">
+					<option>---elije tu voz---</option>
+				</select>
+				<textarea class="text-select"></textarea>
+				<input type="submit" value="Hablar" class="hablar">
+			</form>
+		</section>
+	</article>
+	
+	<script src="primero.js"></script>
+</body>
+</html>
+
+

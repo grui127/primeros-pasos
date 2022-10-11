@@ -1,0 +1,104 @@
+1) hacer un mini sitio web donde los elementos se vayan cargando de diferentes archivos
+
+	-hacer un header titulo dom
+	-hacer secciones espaciadas
+	-hacer un menu de barras donde al darle click se despliegue para 	viajar entre secciones
+	-hacerlo reutilizable
+	-armarlo responsive, con efecto de boton
+	- todos los ejercicios se mandaran a invocar desde un archivo js 	diferente parece.
+
+2)reloj digital y alarma sonora
+	1 titulo
+	4 botones de: iniciar reloj, detener reloj, iniciar alarma, detener alarma.
+	en iniciar reloj que muestre la hora actual y se actualize solo,
+detener reloj elimina el span del reloj
+iniciar alarma hace sonido de alarma sonora
+detener alarma detiene el sonido
+
+inabilitar los botones de iniciado una vez apretados
+
+usa temporizadores y etiqueta audio
+
+
+3)trabajar con eventos del tecaldo
+hacer un cuadrado negro con una pelota amarilla que pueda moverse con las flechas
+y crear atajos de teclados de
+alt  + a = alerta
+alt + p = prompt
+alt + c = confirm
+
+
+4)realizar una cuenta regresiva completa desde meses hasta segundos
+ y que cuando llegue a 0 se muestre un mensaje final pudiendo ser un feliz cumpleaños
+
+
+5)hacer un boton que nos lleve hasta arriba de todo
+que aparezca una vez el scroll haya bajado cada tantos pixeles
+
+
+6) hacer un boton de tema oscuro y tema claro en la esquina inferior izquierda
+
+
+7) hacer que se almacene en el local storage la opcion que elige el usuario del modo oscuro para que cuando recargue la pagina aparezca como la dejo
+
+8)un hdp
+hacer responsive desing con javascript
+que en tema escritorio se vea el mapa y el video
+que al ser movil solo aparezcan como links de url de los sitios validos
+
+eventos del bom de ventana
+windows mach media
+la ptm jon te voy a cagar a palos
+
+
+9)hacer un responsive tester.
+3 inputs, donde en el primero se pasa la url
+el segundo el ancho
+el tercero la altura.
+
+hacer 2 botones, uno que abra la pestaña en una nueva ventana suspendida y el otro boton que la cierre
+(ayuda clases 77 y 78)
+(tambien enfocar la programacion en formulario ocn evento submit) 
+
+
+10) deteccion de dispositivos: no es un ejercicio sino mas una clase
+
+
+11)detectar estados de conexion y desconeccion y mostrar un mensaje de alerta en caso de que se pierda o se reconecte
+tips objeto navigator tiene la deteccion y obj window tiene el evento
+
+12) deteccion de la camara web
+get user media
+media devicers, consejos 
+
+13)deteccion de geolocalizacion
+
+14)filtros de busqueda
+
+tips, usar eventos del teclado y algo del html
+
+15) slider responsivo
+
+16)scroll spy, poner el nav a la derecha, y que detecte en que elemento estamos.
+
+usar intersection observer
+
+17) hacer un video inteligente, que cuando aparezca en pantalla se auto reproduzca
+y que cuando se deje de ver la pestaña se silencie.
+
+usar intersection observer y visibility change 
+
+
+18) validaciones de formulario,
+nombre valido
+mail valido
+asunto nada
+y maximo de 250 caracteres
+
+se puede usar required
+buscar patron tambien
+
+no usar el evento submit de momento, solo validarlo 
+
+19)Ultimo ejercicio: narrador de voz
+api speach sintesis

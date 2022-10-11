@@ -1,0 +1,397 @@
+:root{
+	--color1: #fe0;
+	--color2: #111;
+	--color3: #2229;
+	--color4: #fe0e;
+	--color5: #fff;
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	scroll-behavior: smooth;
+}
+.header{
+	background-color: var(--color1);
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:var(--color2)
+}
+.btnMenu{
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	height: 3rem;
+	width: 3rem;
+	z-index: 100;
+	background-color: var(--color1);
+	color: var(--color2);
+	border-radius: 50%;
+	font-size: 20px;
+	cursor: pointer;
+}
+.btnArriba{
+	position: fixed;
+	bottom: 2rem;
+	left: 6rem;
+	height: 3rem;
+	width: 3rem;
+	z-index: 98;
+	background-color: var(--color1);
+	color: var(--color2);
+	border-radius: 50%;
+	font-size: 20px;
+	text-decoration: none;
+	opacity: 0;
+	transition: opacity .5s ease, transform .5s ease;
+	transform: translate(100%,0);
+}
+.btnArriba a{
+	all: unset;
+	cursor: pointer;
+}
+.modOsc{
+	position: fixed;
+	bottom: 2rem;
+	left: 2rem;
+	height: 3rem;
+	width: 3rem;
+	z-index: 100;
+	background-color: var(--color1);
+	color: var(--color2);
+	border-radius: 50%;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+
+nav{
+position: fixed;
+top: 0;
+right: 0;
+background-color: var(--color3);
+color: var(--color1);
+z-index: 99;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+transition: all .4s ease;
+transform: translate(0,-100%);
+overflow-y: hidden;
+}
+nav a{
+	text-decoration: none;
+	width: 100%;
+	text-align: center;
+	padding: 15px 0;
+	font-size: 15px;
+	font-weight: bold;
+	color: var(--color1);
+}
+nav a:hover{
+	background-color: var(--color4);
+	color: var(--color3);
+}
+article{
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background-color: var(--color5);
+	color: var(--color2);
+}
+.secciones{
+	text-align: center;
+	height: 500px;
+	color: var(--color2);
+}
+section:nth-child(4) div{
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+}
+section:nth-child(4) div a{
+	margin: 20px;
+}
+
+.btnActivo{
+	transform: translate(0,0);
+	opacity: 1;
+}
+
+
+
+.secciones:first-child button{
+	margin: 20px 5px;
+}
+.hora {
+	display: none;
+	font-size: 30px;
+	margin-top: 10px;
+	color: var(--color2);
+}
+.audio{
+	display: none;
+}
+.prender{
+	display: block;
+}
+.cancha{
+	height: 400px;
+	width: 80%;
+	background-color: var(--color2);
+	margin: auto;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.pelota{
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	background-color: var(--color1);
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: 80;
+}
+.mensaje{
+	margin: auto;
+	width: 60%;
+	height: 400px;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+.formulario input:nth-child(1){
+	display: block;
+	margin: 5px auto;
+
+}
+.formulario input:nth-child(2){
+	display: block;
+	margin: 2px auto;
+}
+.formulario input:nth-child(3){
+	display: block;
+	margin: 5px auto;
+
+}
+.online{
+	position: absolute;
+	top: 0;
+	transform: translate(0,-100%);
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	background-color: #7c0;
+	color: #fff; 
+	animation: estado 3s;
+}
+.offline{
+	position: absolute;
+	top: 0;
+	transform: translate(0,-100%);
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	background-color: #a00;
+	color: #fff; 
+	animation: estado 3s;
+}
+
+@keyframes estado {
+	0% {
+		transform: translate(0,-100%);
+	}
+	30%{
+		transform: translate(0,0);
+	}
+	70%{
+		transform: translate(0,0);
+	}
+	100% {
+		transform: translate(0,-100%);
+	}
+}
+
+.maps{
+	margin: 5px auto;
+	width: 350px;
+	height: 250px;
+}
+
+
+.secciones:nth-child(8){
+	margin: auto;
+	width: 98%;
+	height: 100%;
+}
+.fotos{
+	margin-top: 10px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 12rem);
+	grid-template-rows: repeat(auto-fill, 15rem);
+	grid-gap: 5rem;
+	width: 100%;
+	height: 600px;
+}
+.pie{
+	background-color: var(--color2);
+}
+.pie p{
+	margin-top: -.3rem;
+	color: var(--color1);
+}
+.desaparecer {
+	display: none;
+}
+
+.sortear{
+	margin-top: 10px;
+}
+
+.carrusel{
+	width: 100%;
+	height: 450px;
+}
+
+.carrusel img{
+    margin: auto;
+    width: 80%;
+    max-width: 700px;
+    height: 90%;
+}
+.btn-left{
+    all: unset;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--color1);
+    color: var(--color2);
+    border: 3px solid #000;  
+	position: relative;
+	left: 5rem;
+	top: -13rem;
+	transition: .8s all;
+}
+.btn-right{
+    all: unset;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--color1);
+    color: var(--color2);
+    border: 3px solid #000;    
+	position: relative;
+	right: 5rem;
+	top: -13rem;
+	transition: .8s all;
+}
+
+.carrusel figcaption{
+	width: 70%;
+	text-align: center;
+	height: 20px;
+	background-color: var(--color2);
+	color: var(--color1);
+	margin: auto;
+	margin-top: -20px;
+	border-bottom-left-radius: 100%;
+	border-bottom-right-radius: 100%;
+}
+
+
+@media screen and (min-width: 1040px){
+	.btnMenu{
+		display: none;
+	}
+	nav{
+	transform: translate(0,0);
+	opacity: 1;
+	margin: 0;
+	padding: 0;
+	width: 15%;
+	left: 85%;
+	background-color: var(--color2);
+	}
+
+}
+
+#muteado{
+	width: 80%;
+	height: 400px;
+}
+
+.divform{
+	width: 90%;
+	height: 500px;
+	padding: 10px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.divform input{
+	border: 2px solid #000;
+	height: 25px;
+	width: 100%;
+	margin: 15px 0;
+}
+.divform textarea{
+	border: 2px solid #000;
+	height: 100px;
+	width: 100%;
+	margin: 10px 0;
+}
+
+.divform button{
+	border: 2px solid #000;
+	background-color: #0b7;
+	font-size: 16px;
+	font-weight: bold;
+	width: 90%;
+	height: 30px;
+	margin: 10px 0;
+}
+input:invalid{
+	background-color: #faa5;
+}
+textarea:invalid{
+background-color: #faa5;
+}
+input:valid{
+background-color: #aff5;
+}
+textarea:valid{
+background-color: #aff5;
+}
+
+#narrador{
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+.selector{
+	width: 50%;
+	margin: auto;
+}
+#narrador .text-select{
+	margin: 10px auto;
+	width: 50%;
+	height: 300px;
+}
+#narrador .hablar{
+	margin: auto;
+	width: 50%;
+}
